@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Course Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page">
+        <h1>Login</h1>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <br>
+			<button type="submit">Login</button>
+        </form>
+        <p><a href="#" id="forgot-password-link">Forgot Password?</a></p>
+        <p><a href="#" id="register-link">Create New User</a></p>
+    </div>
+
+    <!-- Forgot Password Page -->
+    <div id="forgot-password-page" class="hidden">
+        <h1>Forgot Password</h1>
+        <form id="forgot-password-form">
+            <input type="email" id="forgot-email" placeholder="Enter your email" required>
+            <br>
+			<button type="submit">Send Code</button>
+        </form>
+    </div>
+
+    <!-- Reset Password Page -->
+    <div id="reset-password-page" class="hidden">
+        <h1>Reset Password</h1>
+        <form id="reset-password-form">
+            <input type="text" id="reset-code" placeholder="Enter the code" required>
+            <input type="password" id="new-password" placeholder="New Password" required>
+            <input type="password" id="retype-password" placeholder="Retype New Password" required>
+            <br>
+			<button type="submit">Reset Password</button>
+        </form>
+    </div>
+
+    <!-- Registration Page -->
+    <div id="register-page" class="hidden">
+        <h1>Register</h1>
+        <form id="register-form">
+            <input type="text" id="first-name" placeholder="First Name" required>
+            <input type="text" id="last-name" placeholder="Last Name" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="date" id="dob" placeholder="Date of Birth" required>
+            <input type="text" id="register-username" placeholder="Username" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <br>
+			<button type="submit">Register</button>
+        </form>
+    </div>
+
+    <!-- Course Selection Page -->
+    <div id="course-selection-page" class="hidden">
+        <h1>Course Selection</h1>
+        <form id="course-selection-form">
+            <select id="course">
+                <option value="CHOOSE">choose</option>
+				<option value="bsc">BSc</option>
+                <option value="bcom">BCom</option>
+                <option value="bca">BCA</option>
+            </select>
+            <br>
+			<button type="submit">Choose</button>
+        </form>
+    </div>
+
+    <!-- Semester Selection Page -->
+    <div id="semester-selection-page" class="hidden">
+        <h1>Semester Selection</h1>
+        <form id="semester-selection-form">
+            <select id="semester">
+				<option value="CHOOSE">Choose</option>
+			    <option value="semester1">Semester 1</option>
+                <option value="semester2">Semester 2</option>
+                <option value="semester3">Semester 3</option>
+                <option value="semester4">Semester 4</option>
+                <option value="semester5">Semester 5</option>
+                <option value="semester6">Semester 6</option>
+            </select>
+			<br>
+		  <button type="submit">Choose</button>
+        </form>
+    </div>
+
+    <!-- Syllabus Page -->
+    <div id="syllabus-page" class="hidden">
+        <h1>Your Syllabus</h1>
+        <div id="syllabus-content"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
